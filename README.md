@@ -28,11 +28,18 @@ approach it on the job.
 
 ## Data Sources
 
-| Dataset                    | Source          | Update Frequency |
-| -------------------------- | --------------- | ---------------- |
-| Calgary Transit Fleet List | data.calgary.ca | Weekly           |
-| Calgary Transit Ridership  | data.calgary.ca | Monthly          |
-| Calgary Transit Routes     | data.calgary.ca | As needed        |
+| Dataset                                      | Source          | Update Frequency |
+| -------------------------------------------- | --------------- | ---------------- |
+| Calgary Transit Ridership                    | data.calgary.ca | Monthly          |
+| Calgary Transit Routes                       | data.calgary.ca | As needed        |
+| Hours of Service Provided by Calgary Transit | data.calgary.ca | Monthly          |
+
+**Note:** The Calgary Transit Fleet List dataset was originally planned
+for this project but was found to be access-restricted (returns a login
+requirement through its public API and browser access). This is
+documented in detail in `notebooks/01_data_extraction.ipynb`. Hours of
+Service was identified as a working substitute, enabling a utilization
+metric (boardings per operating hour) when combined with ridership data.
 
 ## Project Structure
 
